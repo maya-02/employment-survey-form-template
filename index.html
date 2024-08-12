@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="styles.css"/>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <h1 id="title"> Employment Survey</h1>
+      <p id="description"> <i>Please answer the following questions to the best of your abilities</i> </p>
+    </body>
+    <form id="survey-form" method="post" action="https://survey-form.freecodecamp.rocks.">
+    <fieldset>
+    <label id="name-label" for "name">Name<input id="name" name="name" type="text" placeholder="Enter your name" required/></label>
+    <label id="email-label" for "email">Email<input id="email" name="email" type="email" placeholder="Enter your email" required/></label>
+    <label id="number-label" for "number">Age<input id="number" name="number" type="number" min="16" max="120" placeholder="Enter your age" required/></label>
+    </fieldset>
+      <fieldset>
+        <label for "dropdown">Which best describes your current employment status?
+          <select id="dropdown">
+            <option value="Select one" disabled selected>Select one</option>
+            <option value="Employee (Full Time)">Employee (Full Time)</option>
+            <option value="Employee (Part Time)">Employee (Part Time)</option>
+            <option value="Self-employed">Self-employed</option>
+            <option value="Worker">Worker</option>
+            <option value="Student">Student</option>
+            <option value="Unemployed">Unemployed</option>
+            </select>
+        </label>
+        </fieldset>
+        <fieldset>
+          <legend>Are you currently seeking new employment?</legend>
+<label for="yes"><input id="yes" type="radio" name="seeking-employment" class="inline" value="1" checked /> Yes, I am currently looking for a (new) job</label>
+        <label for="no"><input id="no" type="radio" name="seeking-employment" class="inline" value="2" /> No, I am not currently looking for a (new) job</label>
+          </fieldset>
+          <fieldset>
+             <legend>What industries are you interested in or have experience in? (Select all that apply)</legend>
+            <label for="technology">
+        <input class="inline" id="technology" type="checkbox" name="industries" value="technology" />Technology
+      </label>
+                  <label for="healthcare">
+        <input class="inline" id="healthcare" type="checkbox" name="industries" value="healthcare"/>Healthcare
+      </label>
+          <label for="education">
+        <input class="inline" id="education" type="checkbox" name="industries" value="education"/>Education
+      </label>
+          <label for="finance">
+        <input class="inline" id="finance" type="checkbox" name="industries" value="finance"/>Finance
+      </label>
+         <label for="retail">
+        <input class="inline" id="retail" type="checkbox" name="industries" value="retail" />Retail
+      </label>
+        <label for="hospitality">
+        <input class="inline" id="hospitality" type="checkbox" name="industries" value="hospitality" />Hospitality
+      </label>
+        <label for="manufacturing">
+        <input class="inline" id="manufacturing" type="checkbox" name="industries" value="manufacturing" />Manufacturing
+      </label>
+      <label for="arts-and-entertainment">
+        <input class="inline" id="arts-and-entertainment" type="checkbox" name="industries" value="arts-and-entertainment"/>Arts and Entertainment
+      </label>
+      <label for="government">
+        <input class="inline" id="government" type="checkbox" name="industries" value="government" />Government
+      </label>
+      <label for="other">Other (please specify):
+          <textarea class="inline" id="other" name="other" rows="1" cols="30" placeholder="Please type here..."></textarea>
+        </label>
+            </fieldset>
+            <fieldset>
+             <label for="accept">
+        <input class="inline" id="accept" type="checkbox" required name="accept" value="accept"/> I agree to my data being processed for research purposes
+      </label>
+      <input id="submit" type="submit" value="Submit" />
+      </fieldset>
+       </form>
+  </html>
